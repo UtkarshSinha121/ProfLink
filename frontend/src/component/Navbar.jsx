@@ -83,7 +83,7 @@ const Navbar = () => {
         </li>
         <li  className="nav-item mx-2 item" >
         <Link >
-         <img className='rounded-circle' src={"http://localhost:5000/"+currentUser.avtar} alt="" height={40} width={40}/>
+         <img className='rounded-circle' src={"https://proflink.onrender.com/"+currentUser.avtar} alt="" height={40} width={40}/>
          </Link>
        </li>
        
