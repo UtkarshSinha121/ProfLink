@@ -7,3 +7,6 @@
 - **`Follow System`: Stay updated with industry leaders, colleagues, or any professional of interest.**
 - **`Profile View`: Browse profiles of other professionals and see their professional journey.**
 - **`Edit & Delete`: Full control over your posts and profile information.**
+## Tech Stack
+- **Frontend: React.js.**
+- **Backend: Node.js, Express.js, and MongoDB.**
