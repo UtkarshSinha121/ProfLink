@@ -11,12 +11,28 @@
 - **`Frontend`: React.js.**
 - **`Backend`: Node.js, Express.js, and MongoDB.**
 ## Screenshots
-### Signup
+### Signup Page
 ![signup](Screenshots/signup.png )
 ![signup](Screenshots/signup2.png )
-### Login 
+### Login Page
 ![login](Screenshots/login.png)
 ![login](Screenshots/login2.png)
+### Home Page
+![home](Screenshots/home.png)
+![home](Screenshots/like.png)
+### Create Post
+![post](Screenshots/createpost.png)
+![post](Screenshots/createpost2.png)
+### Edit Post
+![edit](Screenshots/editpost.png)
+### User Profile
+![profile](Screenshots/profile.png)
+### Search User
+![search](Screenshots/searchuser.png)
+![search](Screenshots/searchuser2.png)
+![follow](Screenshots/follow.png)
+
+
 
 
 
