@@ -37,6 +37,9 @@
 ![search](Screenshots/searchuser.png)
 **You can serach other users by username.**
 ![search](Screenshots/searchuser2.png)
+## commands Used
+**`To run Frontend` - npm start**
+**`To run Backend` - npm run dev**
 
 
 
