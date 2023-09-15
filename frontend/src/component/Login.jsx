@@ -95,7 +95,7 @@ function(){
 }></i>
           </div >
           <div className='d-flex justify-content-center'>
-          <button type="submit" className="btn btn-secondary  w-75 rounded-5">SIGN IN</button>
+          <button type="submit" className="btn btn-primary  w-75 rounded-5">LOGIN</button>
           </div>
         </form>
      </div>

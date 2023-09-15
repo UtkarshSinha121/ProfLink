@@ -171,7 +171,7 @@ function(){
                   <input  type="file" className='form-control  input_style '  onChange={uploadFile} />
                   </div>
                   <div class="d-flex flex-row justify-content-center mx-4 mb-3 mb-lg-2">
-                    <button type="submit" class="btn btn-primary btn-floating mx-1 w-100 rounded-5">Sign In</button>
+                    <button type="submit" class="btn btn-primary btn-floating mx-1 w-100 rounded-5">Sign Up</button>
                   </div>
 
           </form>
