@@ -12,5 +12,5 @@
 - **`Backend`: Node.js, Express.js, and MongoDB.**
 ## Screenshots
 ### Signup
-![signup](signup.png)
+![signup](Screenshots/signup.png )
 
