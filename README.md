@@ -13,24 +13,31 @@
 ## Screenshots
 ### Signup Page
 ![signup](Screenshots/signup.png )
+**On clicking the signup button, You will be directed to the login page**
 ![signup](Screenshots/signup2.png )
 ### Login Page
 ![login](Screenshots/login.png)
+**On clicking the signin button, You will be directed to the home page**
 ![login](Screenshots/login2.png)
 ### Home Page
 ![home](Screenshots/home.png)
+**User can likes the post of other users.**
 ![home](Screenshots/like.png)
+**User can follow other users by clicking on follow button.**
+![follow](Screenshots/follow.png)
 ### Create Post
 ![post](Screenshots/createpost.png)
 ![post](Screenshots/createpost2.png)
 ### Edit Post
 ![edit](Screenshots/editpost.png)
 ### User Profile
+**User can view their profile.**
 ![profile](Screenshots/profile.png)
 ### Search User
 ![search](Screenshots/searchuser.png)
+**You can serach other users by username.**
 ![search](Screenshots/searchuser2.png)
-![follow](Screenshots/follow.png)
+
 
 
 
