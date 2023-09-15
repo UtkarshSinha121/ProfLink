@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+
+.head2{
+  color: rgb(24, 24, 135);
+}
+.header{
+ background-color: rgb(24, 24, 135) ;
+ color: white ;
+}
+li.nav-item:hover{
+ color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item .active{
+ font-weight: bold;
+ color: black !important;
+ border-bottom: 2px solid black;
+}
+.error-label{
+ color:red;
+ display:inline;
+ font-weight:bold;
+ font: size 5px;
+ margin-left: 35px;
+}
+button.like-button:hover{
+ border: none;
+
+}
+.bg-clr{
+ background-color: rgb(217, 216, 216)
+}
+.nav-clr{
+ background-color: rgb(51, 51, 58) ;
+ color: white ;
+}
+.sign-img{
+ background-image: url(./images/signup3\ \(2\).jpg);
+
+ background-size: cover;
+ overflow: hidden;
+ height: 100vh;
+
+}
+.log-img{
+ background-image: url(./images/login4.jpg);
+ background-size: cover;
+ overflow: hidden;
+ height: 100vh;
+}
+.bg-img{
+ background-image: url(./images/home.jpg);
+ background-size: cover;
+ 
+ min-height: 100vh;
+}
+.sign-card{
+ background-color: rgba(25, 25, 28, 0.779);
+ box-shadow: 3px 3px 10px 2px rgba(250, 249, 249, 0.911);
+ margin-top: 100px;
+}
+.post-card{
+ background-color: white;
+
+ margin-top: 20px;
+}
+.logo{
+ font-family:'Lobster' ;
+ color: white;
+ font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.input_style{
+ background-color: rgba(16, 14, 14, 0.833);
+ color: white;
+ border: none;
+ border-bottom: 1px solid white;
+ border-radius: 0px;
+ outline: none;
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.input_style::placeholder{
+ color: white;
+ opacity: 1;
+ font-weight: bold;
+} 
+.label-control{
+ 
+ font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-size{
+ background: linear-gradient(90deg, #e2eaec 0%, #fcfcff 100%);
 }
