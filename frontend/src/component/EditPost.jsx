@@ -34,7 +34,7 @@ const EditPost = () => {
     const [selImage, setselImage] = useState([]);
 
     const fetchPostData = async () => {
-        const res = await fetch('http://localhost:5000/addpost/getbyid/'+id);
+        const res = await fetch('https://proflink.onrender.com/addpost/getbyid/'+id);
         console.log(res.status);
         if(res.status === 200){
             const data = await res.json();
@@ -62,7 +62,7 @@ const EditPost = () => {
           console.log(values);
           
          
-        const res = await fetch('http://localhost:5000/addpost/update/'+id, {
+        const res = await fetch('https://proflink.onrender.com/addpost/update/'+id, {
             method: 'PUT',
             body: JSON.stringify(values),
             headers: {
@@ -95,7 +95,7 @@ const EditPost = () => {
         const fd = new FormData();
         fd.append('myfile', file);
     
-        const res = await fetch('http://localhost:5000/util/uploadfile', {
+        const res = await fetch('https://proflink.onrender.com/util/uploadfile', {
           method: 'POST',
           body: fd
         });

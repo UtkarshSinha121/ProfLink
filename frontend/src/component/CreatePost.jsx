@@ -33,7 +33,7 @@ const CreatePost = () => {
           console.log(values);
           
           //sending request to backend
-          const res = await fetch('http://localhost:5000/createpost/add', {
+          const res = await fetch('https://proflink.onrender.com/createpost/add', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {
@@ -65,7 +65,7 @@ const CreatePost = () => {
         const fd = new FormData();
         fd.append('myfile', file);
     
-        const res = await fetch('http://localhost:5000/util/uploadfile', {
+        const res = await fetch('https://proflink.onrender.com/util/uploadfile', {
           method: 'POST',
           body: fd
         });

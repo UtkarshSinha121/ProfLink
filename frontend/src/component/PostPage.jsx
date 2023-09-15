@@ -13,7 +13,7 @@ const PostPage = () => {
   const [search, setsearch] = useState([]);
 
   const fetchUserData1 = async () => {
-    const res = await fetch('http://localhost:5000/likes/getall');
+    const res = await fetch('https://proflink.onrender.com/likes/getall');
     console.log(res.status);
     if(res.status === 200){
         const data = await res.json();
@@ -33,7 +33,7 @@ const PostPage = () => {
     },
     onSubmit:async (values) => {
        console.log(values);
-       const res = await fetch('http://localhost:5000/likes/add', {
+       const res = await fetch('https://proflink.onrender.com/likes/add', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -45,7 +45,7 @@ const PostPage = () => {
 
 
    const fetchUserData = async () => {
-      const res = await fetch('http://localhost:5000/addpost/getall');
+      const res = await fetch('https://proflink.onrender.com/addpost/getall');
       console.log(res.status);
       if(res.status === 200){
           const data = await res.json();
@@ -60,7 +60,7 @@ const PostPage = () => {
    }, [])
 
    const fetchFollowData = async () => {
-    const res = await fetch('http://localhost:5000/follow/getall');
+    const res = await fetch('https://proflink.onrender.com/follow/getall');
     console.log(res.status);
     if(res.status === 200){
         const data = await res.json();
@@ -90,7 +90,7 @@ const PostPage = () => {
   }
 
     const followUser = async (x) => {
-      const res = await fetch("http://localhost:5000/follow/add", 
+      const res = await fetch("https://proflink.onrender.com/follow/add", 
         {method:'POST',
         body:JSON.stringify(
           {
@@ -116,7 +116,7 @@ const PostPage = () => {
     }
 
     const unfollow = async (x) => {
-      const res = await fetch("http://localhost:5000/follow/delete/"+ x, {
+      const res = await fetch("https://proflink.onrender.com/follow/delete/"+ x, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -141,7 +141,7 @@ const PostPage = () => {
               <div className='d-flex  ' >
                 <div className='d-flex'>
                     <div  >
-            <img className='rounded-circle mb-2' src={"http://localhost:5000/"+post.avtar} alt="" height={50} width={50}/>
+            <img className='rounded-circle mb-2' src={"https://proflink.onrender.com/"+post.avtar} alt="" height={50} width={50}/>
             </div>
             <div>
              <h5 className='card-title ms-2 '> {post.name}</h5>            
@@ -156,7 +156,7 @@ const PostPage = () => {
              <hr  />             
         <h5 >{post.description}</h5>
        <div className='d-flex justify-content-center'>
-        <img className=' rounded-1' src={"http://localhost:5000/"+post.image} alt="" width={600} height={330} style={{overflow:'hidden'}} />
+        <img className=' rounded-1' src={"https://proflink.onrender.com/"+post.image} alt="" width={600} height={330} style={{overflow:'hidden'}} />
         </div>
         <hr  />
         <form  style={{marginTop:'-20px', marginRight:'-20px',marginBottom:'-20px'}}   onSubmit={likesForm.handleSubmit}>            
@@ -182,7 +182,7 @@ const PostPage = () => {
     {likesForm.values.postId = postId}
     if(!check(postId)){
         //setClicked(true);
-        fetch(`http://localhost:5000/addpost/${postId}/likes`, {
+        fetch(`https://proflink.onrender.com/addpost/${postId}/likes`, {
           method: 'PUT',
       })
       .then(res => res.json())

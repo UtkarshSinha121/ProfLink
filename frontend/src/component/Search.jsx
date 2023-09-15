@@ -14,7 +14,7 @@ const Search = () => {
     const [followed, setfollowed] = useState(false);
 
     const fetchUserData = async () => {
-       const res = await fetch('http://localhost:5000/user/getall');
+       const res = await fetch('https://proflink.onrender.com/user/getall');
        console.log(res.status);
        if(res.status === 200){
            const data = await res.json();
@@ -29,7 +29,7 @@ const Search = () => {
     }, [])
 
     const fetchFollowData = async () => {
-        const res = await fetch('http://localhost:5000/follow/getall');
+        const res = await fetch('https://proflink.onrender.com/follow/getall');
         console.log(res.status);
         if(res.status === 200){
             const data = await res.json();
@@ -59,7 +59,7 @@ const Search = () => {
       }
     
         const followUser = async (x) => {
-          const res = await fetch("http://localhost:5000/follow/add", 
+          const res = await fetch("https://proflink.onrender.com/follow/add", 
             {method:'POST',
             body:JSON.stringify(
               {
@@ -85,7 +85,7 @@ const Search = () => {
         }
     
         const unfollow = async (x) => {
-          const res = await fetch("http://localhost:5000/follow/delete/"+ x, {
+          const res = await fetch("https://proflink.onrender.com/follow/delete/"+ x, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
@@ -109,7 +109,7 @@ const Search = () => {
             return UserList.map((user) => ( <div className='col-md-4'>
                   <div className='card m-3'>
                         <div className='card-body text-center'>
-                        <img className='rounded-circle mb-2' src={"http://localhost:5000/"+user.avtar} alt="" height={80} width={80}/>
+                        <img className='rounded-circle mb-2' src={"https://proflink.onrender.com/"+user.avtar} alt="" height={80} width={80}/>
                             <h5>{user.name}</h5>
                             <div className='d-flex '>
                             <Link to={'/profile/'+user.name} className='btn btn-success'>View Profile</Link>

@@ -47,7 +47,7 @@ const month = monthNames[current.getMonth()];
           console.log(values);
           
           //sending request to backend
-          const res = await fetch('http://localhost:5000/addpost/add', {
+          const res = await fetch('https://proflink.onrender.com/addpost/add', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {
@@ -79,7 +79,7 @@ const month = monthNames[current.getMonth()];
         const fd = new FormData();
         fd.append('myfile', file);
     
-        const res = await fetch('http://localhost:5000/util/uploadfile', {
+        const res = await fetch('https://proflink.onrender.com/util/uploadfile', {
           method: 'POST',
           body: fd
         });

@@ -22,7 +22,7 @@ const SignupSchema = Yup.object().shape({
 });
 // check if email is present
 const checkAvailabilityEmail = async (email) => {
-  const res = await fetch("http://localhost:5000/user/checkemail/"+email,
+  const res = await fetch("https://proflink.onrender.com/user/checkemail/"+email,
   {method:'GET',
   headers:{
     'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ const checkAvailabilityEmail = async (email) => {
 
 //check if username is present
 const checkAvailabilityName = async (name) => {
-  const res = await fetch("http://localhost:5000/user/checkname/"+name,
+  const res = await fetch("https://proflink.onrender.com/user/checkname/"+name,
   {method:'GET',
   headers:{
     'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ const Signup = () => {
       values.avtar= selImage;
       console.log(values);
     
-      const res = await fetch('http://localhost:5000/user/add', {
+      const res = await fetch('https://proflink.onrender.com/user/add', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -109,7 +109,7 @@ const Signup = () => {
     const fd = new FormData();
     fd.append('myfile', file);
 
-    const res = await fetch('http://localhost:5000/util/uploadfile', {
+    const res = await fetch('https://proflink.onrender.com/util/uploadfile', {
       method: 'POST',
       body: fd
     });

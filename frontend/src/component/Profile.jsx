@@ -14,7 +14,7 @@ const Profile = () => {
   )
   console.log(currentUser);
   const fetchUserData = async () => {
-    const res = await fetch('http://localhost:5000/user/getbyname/'+currentUser.name);
+    const res = await fetch('https://proflink.onrender.com/user/getbyname/'+currentUser.name);
     console.log(res.status);
     if(res.status === 200){
         const data = await res.json();
@@ -31,7 +31,7 @@ const Profile = () => {
 
 
   const fetchPostData = async () => {
-    const res = await fetch('http://localhost:5000/addpost/getbyname/'+currentUser.name);
+    const res = await fetch('https://proflink.onrender.com/addpost/getbyname/'+currentUser.name);
     console.log(res.status);
     if(res.status === 200){
         const data = await res.json();
@@ -47,7 +47,7 @@ const Profile = () => {
   console.log(Post._id);
 
   const deletePost = async (id) => {
-    const res = await fetch('http://localhost:5000/addpost/delete/'+id,{
+    const res = await fetch('https://proflink.onrender.com/addpost/delete/'+id,{
       method:'DELETE'
     });
     if(res.status === 200){
@@ -83,7 +83,7 @@ const Profile = () => {
              <div className='d-flex '>
             <div className='d-flex'>
                     <div>
-            <img className='rounded-circle mb-2' src={"http://localhost:5000/"+post.avtar} alt="" height={50} width={50}/>
+            <img className='rounded-circle mb-2' src={"https://proflink.onrender.com/"+post.avtar} alt="" height={50} width={50}/>
             </div>
             <div>
              <h5 className='card-title ms-2'> {post.name}</h5>            
@@ -99,7 +99,7 @@ const Profile = () => {
              <hr />             
         <h5>{post.description}</h5>
         <div className='d-flex justify-content-center'>
-        <img  className=' rounded-4' src={"http://localhost:5000/"+post.image} alt="" width={600} height={330} style={{overflow:'hidden'}} />
+        <img  className=' rounded-4' src={"https://proflink.onrender.com/"+post.image} alt="" width={600} height={330} style={{overflow:'hidden'}} />
         </div>
         <hr />
         <div>
@@ -127,7 +127,7 @@ const Profile = () => {
            <div className='card mt-4'>
         <div className='card-body text-center'>
         
-           <img className='rounded-circle mb-2' src={"http://localhost:5000/"+currentUser.avtar} alt="" height={100} width={100}/>
+           <img className='rounded-circle mb-2' src={"https://proflink.onrender.com/"+currentUser.avtar} alt="" height={100} width={100}/>
           
            <h5>{currentUser.name}</h5>
            <h6>{currentUser.email}</h6>
