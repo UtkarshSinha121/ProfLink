@@ -12,7 +12,7 @@ const LikesRouter = require('./routers/likesRouter');
 const FollowRouter = require('./routers/followRouter');
 
 app.use(cors({
-    origin : ['https://prof-link.vercel.app/','http://localhost:3000']
+    origin : ['https://prof-link.vercel.app']
 }));
 app.use(express.json());
 
