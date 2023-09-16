@@ -29,7 +29,12 @@ const Search = () => {
     }, [])
 
     const fetchFollowData = async () => {
-        const res = await fetch('https://proflink.onrender.com/follow/getall');
+        const res = await fetch('https://proflink.onrender.com/follow/getall',{
+            method:'GET',
+            headers:{
+                'Content-Type':'application/json'
+            },
+        });
         console.log(res.status);
         if(res.status === 200){
             const data = await res.json();
