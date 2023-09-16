@@ -36,20 +36,14 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <form className="d-flex" role="search">
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-          
-        />
-        <button className="btn btn-outline-none " style={{marginLeft:'-50px'}} >
-        <Link to='/search' >
-        <i class="fa-solid fa-magnifying-glass"></i>
-        </Link>
-        </button>
-      </form>
+    
+    <Link to='/search' >
+        <button className="btn btn-outline-none " >
+        
+        <i class="fa-solid fa-magnifying-glass"></i>Search Users
+        
+        </button></Link>
+      
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
 
       
