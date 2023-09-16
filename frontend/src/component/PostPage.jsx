@@ -132,7 +132,7 @@ const PostPage = () => {
     }
 
     let UserList2=[]
-post2 = UserList.filter((posts) => {
+UserList2 = UserList.filter((posts) => {
   
   for(let i = 0; i<followed.length; i++){
       if(followed[i].userId === currentUser._id && followed[i].following === posts.name){
