@@ -38,7 +38,7 @@ const Navbar = () => {
 
     
     <Link to='/search' style={{textDecoration:'none'}} >
-        <button className="btn btn-white " >
+        <button className="btn btn-light " >
         
         <i class="fa-solid fa-magnifying-glass"></i> Search Users
         
