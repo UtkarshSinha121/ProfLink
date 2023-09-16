@@ -37,10 +37,10 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
     
-    <Link to='/search' >
-        <button className="btn btn-outline-none " >
+    <Link to='/search' style={{textDecoration:'none'}} >
+        <button className="btn btn-white " >
         
-        <i class="fa-solid fa-magnifying-glass"></i>Search Users
+        <i class="fa-solid fa-magnifying-glass"></i> Search Users
         
         </button></Link>
       
