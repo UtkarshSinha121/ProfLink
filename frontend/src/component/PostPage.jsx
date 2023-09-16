@@ -131,10 +131,22 @@ const PostPage = () => {
       }
     }
 
-   const displayPost = ()=>{
-    if(UserList.length === 0) return <h1 className='text-center'>No Data Found</h1>
+    let UserList2=[]
+post2 = UserList.filter((posts) => {
+  
+  for(let i = 0; i<followed.length; i++){
+      if(followed[i].userId === currentUser._id && followed[i].following === posts.name){
+          return true;
+      }
 
-    return UserList.map((post)=> (<div className='col-md-12 m-2 '>
+}
+return false;
+})
+
+   const displayPost = ()=>{
+    if(UserList2.length === 0) return <h1 className='text-center'>No Data Found</h1>
+
+    return UserList2.map((post)=> (<div className='col-md-12 m-2 '>
         <div className='card  post-card card-size'>
             <div className='d-flex'>
             <div className='card-body'>
@@ -149,7 +161,7 @@ const PostPage = () => {
              </div>
              </div>
              <div className='ms-auto mt-2 me-3'>
-             <div >{follow(post.username)}</div>
+             <div >{follow(post.name)}</div>
              </div>
 
              </div>
