@@ -123,7 +123,7 @@ const Search = () => {
                             <div className='d-flex '>
                             <Link to={'/profile/'+user.name} className='btn btn-success'>View Profile</Link>
                              
-                            <div className='ms-auto'>{follow(user.username)}</div>
+                            <div className='ms-auto'>{follow(user.name)}</div>
                             </div>
                             </div>
                             
