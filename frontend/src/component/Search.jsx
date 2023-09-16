@@ -46,7 +46,7 @@ const Search = () => {
       const follow = (x) => {
         if (followed.length > 0) {
           const result = followed.filter((user) => {
-            return user.following === x;
+            return user.following === x && user.userId === currentUser._id;
           });
           if (result.length > 0) {
             return <button className="btn btn-secondary" onClick={() => unfollow(x)}><i class="fa-solid fa-user-minus mx-1"></i>  Following</button>
@@ -106,7 +106,11 @@ const Search = () => {
         if(UserList.length === 0)
             return <h1 className='text-center text-white'>No User Found</h1>
         
-            return UserList.map((user) => ( <div className='col-md-4'>
+            return UserList.map((user) => {
+              return (
+                user.name === currentUser.name ? null :
+
+            <div className='col-md-4'>
                   <div className='card m-3'>
                         <div className='card-body text-center'>
                         <img className='rounded-circle mb-2' src={"https://proflink.onrender.com/"+user.avtar} alt="" height={80} width={80}/>
@@ -124,9 +128,9 @@ const Search = () => {
                   </div>
 
 
-              
+              )
 
-            ))
+              })
  
     };
     const filterUser = (e)=>{
