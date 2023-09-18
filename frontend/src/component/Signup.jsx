@@ -132,8 +132,8 @@ const Signup = () => {
     <h3 className='welcome text-white'>Join now to see what you are missing</h3>
           </div>
           <div className='col-lg-5 col-md-5 '>
-      <div className=' card rounded-4 w-75 vh-50 mt-5 p-3 sign-card '>  
-        <div className='card-body media  px-2'>
+      <div className=' card  media rounded-4 w-75 vh-50 mt-5 p-3 sign-card '>  
+        <div className='card-body  px-2'>
           <h2 className='text-center fw-bold mb-2 text-white'>SIGN UP</h2>
           <form onSubmit={signupForm.handleSubmit} >
                   <p className='error-label'>{signupForm.touched.name ? signupForm.errors.name : ''}</p>
