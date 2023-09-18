@@ -127,11 +127,11 @@ const Signup = () => {
   
     <div className='row align-items-center py-2 '>
     
-    <div className='col-lg-7'>
+    <div className='col-lg-7 col-md-7'>
     <h1><i className='welcome text-white' > Welcome to your professional community </i></h1>
     <h3 className='welcome text-white'>Join now to see what you are missing</h3>
           </div>
-          <div className='col-lg-5 '>
+          <div className='col-lg-5 col-md-5 '>
       <div className=' card rounded-4 w-75 vh-50 mt-5 p-3 sign-card '>  
         <div className='card-body  px-2'>
           <h2 className='text-center fw-bold mb-2 text-white'>SIGN UP</h2>
