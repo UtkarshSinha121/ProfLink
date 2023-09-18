@@ -91,3 +91,8 @@ button.like-button:hover{
 .card-size{
  background: linear-gradient(90deg, #e2eaec 0%, #fcfcff 100%);
 }
+@media only screen and (max-width: 600px) {
+  media {
+    background-color: lightblue;
+  }
+}
