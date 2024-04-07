@@ -14,7 +14,7 @@ const AddPostSchema = Yup.object().shape({
 
 const AddPost = () => {
 
-  const current = new Date();
+  const current = new Date(); 
   console.log(current);
   const date = current.getDate();
   //const month = current.getMonth();
