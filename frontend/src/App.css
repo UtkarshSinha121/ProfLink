@@ -6,7 +6,7 @@
  background-color: rgb(24, 24, 135) ;
  color: white ;
 }
-li.nav-item:hover{
+li.nav-item:hover{  
  color: black;
 }
 
